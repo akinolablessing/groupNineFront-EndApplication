@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="./appointment.css">
+</head>
+<body>
+<div class="container">
+    <h2>Patient Appointment Form</h2>
+    <form id="appointmentForm">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" required>
+
+        <label for="appointmentDate">Appointment Date:</label>
+        <input type="date" id="appointmentDate" required>
+
+        <label for="appointmentTime">Appointment Time:</label>
+        <input type="time" id="appointmentTime" required>
+
+        <label for="purpose">Purpose of Appointment:</label>
+        <textarea id="purpose" rows="4" required></textarea>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+    <div id="message"></div>
+</div>
+
+<script>
+    document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('patientName').value;
+        const date = document.getElementById('appointmentDate').value;
+        const time = document.getElementById('appointmentTime').value;
+        const purpose = document.getElementById('purpose').value;
+
+        document.getElementById('message').innerText = `Appointment booked for ${name} on ${date} at ${time} for ${purpose}.`;
+    });
+</script>
+</body>
+</html>

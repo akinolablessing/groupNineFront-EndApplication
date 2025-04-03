@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register App</title>
+    <link rel="stylesheet" href="./management.css">
+
+</head>
+<body>
+
+<section id="registration" class="registration">
+    <h2>Registration</h2>
+    <form id="registrationForm">
+        <label for="name">UserName:</label>
+        <input type="text" id="name" required>
+
+                <label for="userId">UserId:</label>
+                <input type="number" id="userId" required>
+
+        <label for="userPassword">Password:</label>
+        <input type="password" id="userPassword" required>
+
+
+        <button onclick="window.location.href='appointment.html'">Appointment</button>
+    </form>
+   <script>
+       document.getElementById('registrationForm').addEventListener('submit', function(e) {
+           e.preventDefault();
+
+           const name = document.getElementById('name').value;
+           alert('Registration Succesfull: Name'+name)
+       });
+       </script>
+</section>
+</body>
+</html>
