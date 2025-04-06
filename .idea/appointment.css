@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/images (2).jpeg");
+    background-image: url("../images/doctorInstrument.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -15,10 +15,15 @@ body {
     margin-top: 50px;
 }
 
-h2 {
-    text-align: center;
+.appointment {
+    font-size: 40px;
+    margin-left: 100px;
     color: #333;
 }
+.appointment:hover{
+    color: blue;
+}
+
 
 label {
     display: block;

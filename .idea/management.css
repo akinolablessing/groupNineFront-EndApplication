@@ -1,27 +1,55 @@
 body{
-    background-image: url("../images/images (2).jpeg");
+    background-image: url("../images/black.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
 }
+
+.navaLogo{
+    font-size: 2rem;
+
+}
+
+.navelement{
+    margin-top: 12px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+}
+
 .hospital{
     color: white;
     font-size: 60px;
-    margin-left: 220px;
+    margin-left: -10px;
     margin-top: 100px;
+    font-size: 5rem;
 }
+
+.small-writing{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: -70px;
+}
+
 .blue{
     color: blue;
 }
+.logo{
+    text-decoration: none;
+}
 .shift{
     color: white;
-    font-size: 60px;
-    margin-left: 390px;
+    /*font-size: 30px;*/
+    /*margin-left: 390px;*/
 }
 .header{
     width:96% ;
     background:var(--wight) ;
-
     top: 2rem;
     left: 50%;
     display: flex;
@@ -49,6 +77,7 @@ header .navbar ul li{
 
 }
 header .navbar ul li a{
+    text-decoration: none;
     font-size: 2rem;
     color: white;
 
@@ -58,8 +87,8 @@ header .navbar ul li a:hover{
 }
 .profile-button{
     background-color: blue;
-    margin-left: 600px;
-    margin-top: 100px;
+    margin-left: -530px;
+    margin-top: 80px;
     width: 150px;
     height: 50px;
     border: none;
